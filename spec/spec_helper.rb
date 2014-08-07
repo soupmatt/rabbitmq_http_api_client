@@ -12,7 +12,10 @@ require "json"
 require "rabbitmq/http/client"
 require "bunny"
 require "rantly"
-require "pry"
+begin
+  require "pry"
+rescue LoadError
+end
 
 RSpec.configure do |config|
   config.filter_run_including :focus => true
