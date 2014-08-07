@@ -5,6 +5,8 @@ group :development, :test do
   gem "json", :platform => :ruby_18
   gem "rubysl", :platform => :rbx
   gem "bunny", ">= 1.4.0"
+  gem "pry"
+  gem "pry-byebug"
 
   gem "rantly"
 end
